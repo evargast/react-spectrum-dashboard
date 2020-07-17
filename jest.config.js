@@ -13,6 +13,7 @@ const config = {
     moduleDirectories: ["<rootDir>/src", "node_modules"],
     moduleNameMapper: {
         "\\.css$": "identity-obj-proxy",
+        "^components(.*)$": "<rootDir>/src/components$1",
     },
 };
 

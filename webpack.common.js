@@ -15,6 +15,9 @@ module.exports = {
         path: path.resolve(__dirname, "dist"),
     },
     resolve: {
+        alias: {
+            components: path.resolve(__dirname, "src/components/"),
+        },
         extensions: [".js", ".jsx", ".json", ".ts", ".tsx"],
     },
     module: {
@@ -61,6 +64,8 @@ module.exports = {
         stats: {
             modules: false,
         },
+        hot: true,
+        writeToDisk: true,
     },
 
     performance: {

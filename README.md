@@ -1,6 +1,9 @@
 ## Purpose
 
 The purpose of this project is to provide a dev-ready starting point for modern React apps that utilize the [React Spectrum design system](https://spectrum.adobe.com/).
+
+It includes support for [Hot Module Replacement](https://webpack.js.org/concepts/hot-module-replacement/) within the Webpack DevServer.
+
 It also includes certain development best practices such as,
 
 -   Style guide enforcement with eslint and prettier

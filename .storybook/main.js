@@ -35,6 +35,9 @@ module.exports = {
             ],
         });
 
+        config.resolve.alias = {
+            components: path.resolve(__dirname, "../src/components/"),
+        };
         config.stats = {
             modules: false,
             warnings: false,

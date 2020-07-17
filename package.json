@@ -30,6 +30,7 @@
     },
     "homepage": "https://github.com/evargast/webpack-react-spectrum#readme",
     "devDependencies": {
+        "@spectrum-icons/workflow": "^3.0.2",
         "@storybook/addon-actions": "^5.3.18",
         "@storybook/addon-docs": "^5.3.19",
         "@storybook/addon-info": "^5.2.8",
