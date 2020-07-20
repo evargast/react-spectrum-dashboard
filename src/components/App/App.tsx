@@ -1,26 +1,20 @@
-import { defaultTheme, Grid, Provider, View } from "@adobe/react-spectrum";
-import Header from "components/Header";
+import { defaultTheme, Provider } from "@adobe/react-spectrum";
+import DashboardLayout from "components/DashboardLayout";
+import Router from "components/Router";
+import { RoutesProvider } from "context";
 import * as React from "react";
 import { FC } from "react";
+import { HashRouter } from "react-router-dom";
 
-interface HelloWorldProps {
-    text?: string;
-}
-
-const App: FC<HelloWorldProps> = () => (
+const App: FC = () => (
     <Provider theme={defaultTheme}>
-        <Grid
-            areas={["header  header", "navbar content", "footer  footer"]}
-            columns={["1fr", "3fr"]}
-            rows={["size-1000", "auto", "size-1000"]}
-            height="size-6000"
-            gap="size-100"
-        >
-            <Header gridArea="header" />
-            <View backgroundColor="blue-600" gridArea="navbar" />
-            <View backgroundColor="purple-600" gridArea="content" />
-            <View backgroundColor="magenta-600" gridArea="footer" />
-        </Grid>
+        <HashRouter>
+            <RoutesProvider>
+                <DashboardLayout>
+                    <Router />
+                </DashboardLayout>
+            </RoutesProvider>
+        </HashRouter>
     </Provider>
 );
 

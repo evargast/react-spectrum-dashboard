@@ -14,6 +14,8 @@ const config = {
     moduleNameMapper: {
         "\\.css$": "identity-obj-proxy",
         "^components(.*)$": "<rootDir>/src/components$1",
+        "^context(.*)$": "<rootDir>/src/context$1",
+        "^hooks(.*)$": "<rootDir>/src/hooks$1",
     },
 };
 

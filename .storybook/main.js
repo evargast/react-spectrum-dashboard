@@ -37,6 +37,8 @@ module.exports = {
 
         config.resolve.alias = {
             components: path.resolve(__dirname, "../src/components/"),
+            context: path.resolve(__dirname, "../src/context/"),
+            hooks: path.resolve(__dirname, "../src/hooks/"),
         };
         config.stats = {
             modules: false,
