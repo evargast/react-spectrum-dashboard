@@ -15,7 +15,6 @@ const SideNav: FC = () => {
 
     return (
         <ListBox
-            gridArea="navbar"
             width="size-4800"
             items={items}
             aria-label="Alignment"

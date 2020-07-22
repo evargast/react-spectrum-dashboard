@@ -9,16 +9,9 @@ import {
 import User from "@spectrum-icons/workflow/User";
 import React, { FC } from "react";
 
-interface HeaderProps {
-    gridArea?: string;
-}
-const Header: FC<HeaderProps> = props => {
+const CustomHeader: FC = () => {
     return (
-        <View
-            backgroundColor="celery-600"
-            gridArea={props.gridArea}
-            padding={"size-250"}
-        >
+        <View padding={"size-250"}>
             <Flex justifyContent={"end"}>
                 <MenuTrigger>
                     <ActionButton>
@@ -36,4 +29,4 @@ const Header: FC<HeaderProps> = props => {
     );
 };
 
-export default Header;
+export { CustomHeader as Header };
